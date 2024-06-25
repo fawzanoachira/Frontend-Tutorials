@@ -1,0 +1,24 @@
+p::first-line{
+    color: red;
+}
+
+p::first-letter{
+    font-size: 40px;
+}
+
+p::after{
+    content: " HelllLLoo";
+}
+
+p::before{
+    content: "HelllLLoo ";
+}
+
+p::selection{
+    color: magenta;
+    background-color: yellow;
+}
+
+li::marker{
+    color: aqua;
+}
