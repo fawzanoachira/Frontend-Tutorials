@@ -1,0 +1,42 @@
+a[target] {
+    background-color: yellow;
+}
+
+a[target="_blank"] {
+    background-color: magenta;
+}
+
+[title~="flower"] {
+    border: 5px solid yellow;
+}
+
+[class|="top"] {
+    background: rgb(128, 158, 18);
+}
+
+[class^="top"] {
+    background: blue;
+}
+
+[class$="test"] {
+    background: green;
+}
+
+[class*="te"] {
+    background: cyan;
+}
+
+input[type="text"] {
+    width: 150px;
+    display: block;
+    margin-bottom: 10px;
+    background-color: yellow;
+}
+
+input[type="button"] {
+    background-color: black;
+    color: burlywood;
+    width: 120px;
+    margin-left: 35px;
+    display: block;
+}
