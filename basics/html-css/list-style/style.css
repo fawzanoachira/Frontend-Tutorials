@@ -1,0 +1,9 @@
+ul{
+    list-style: armenian;
+    border: 2px solid red;
+    list-style-position: inside;
+}
+
+li{
+    border: 2px solid red;
+}
