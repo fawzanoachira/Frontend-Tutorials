@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="head"></h1>
+    <h1 class="heading"></h1>
+    <h1></h1>
+    <h1 class="heading"></h1>
+    <script>
+        document.getElementById("head").innerHTML = 'getelementbyid';
+        document.getElementsByClassName('heading')[1].innerHTML = 'getelementsbyclassname';
+        document.getElementsByTagName("h1")[2].innerHTML = "hello";
+    </script>
+</body>
+
+</html>
