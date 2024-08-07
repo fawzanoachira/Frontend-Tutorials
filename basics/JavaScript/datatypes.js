@@ -1,0 +1,14 @@
+var a=10;
+console.log(typeof a);
+var b=10.0;
+console.log(typeof b);
+var c='hello';
+console.log(typeof c);
+var d;
+console.log(typeof d);
+var e=true;
+console.log(typeof e);
+var f=56234863205683240956n;
+console.log(typeof f);
+var g=null;
+console.log(typeof g);
