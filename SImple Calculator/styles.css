@@ -1,13 +1,15 @@
-body{
+body {
     margin-left: 542px;
     margin-top: 85px;
 }
-.calc{
+
+.calc {
     width: 400px;
     height: 600px;
     background: grey;
 }
-#screen{
+
+#screen {
     height: 85px;
     width: 350px;
     margin: 20px;
@@ -18,10 +20,12 @@ body{
     background: black;
     color: aliceblue;
 }
-.buttons{
+
+.buttons {
     padding-left: 25px;
 }
-.button{
+
+.button {
     width: 86px;
     height: 47px;
     margin-top: 39px;
