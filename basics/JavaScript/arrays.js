@@ -31,3 +31,14 @@ fruits.splice(2, 0, "Lemon", "Kiwi");
 console.log(fruits);
 let removed = fruits.splice(2, 2, "Lemon", "Kiwi");
 console.log(removed);
+
+
+const months = ["Jan", "Feb", "Mar", "Apr"];
+const spliced = months.toSpliced(0, 1);
+console.log(months);
+console.log(spliced);
+
+const fruits2 = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+const citrus = fruits2.slice(2);
+console.log(fruits2);
+console.log(citrus);
