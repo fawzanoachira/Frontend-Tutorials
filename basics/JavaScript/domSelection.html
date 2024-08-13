@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="para"></p>
+
+    <h1 class="head"></h1>
+    <h1 class="head"></h1>
+    <h1 class="head"></h1>
+
+    <script>
+        let a = document.getElementById("para");
+        a.innerHTML = "Hello world";
+        a.style.color = "blue";
+        a.style.border = "2px solid";
+
+        let b = document.getElementsByClassName("head");
+        b[0].innerHTML = "Java";
+        b[1].innerHTML = "JavaScript";
+        b[2].innerHTML = "Python";
+
+        b[0].style.color = "green";
+        b[1].style.color = "red";
+        b[2].style.color = "blue";
+    </script>
+</body>
+
+</html>

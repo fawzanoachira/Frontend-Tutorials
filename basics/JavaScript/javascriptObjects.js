@@ -25,3 +25,18 @@ console.log(employee.age);
 
 employee.updateSalary(30000);
 console.log(employee.salary);
+
+// using new keyword
+
+let obj = new Object();
+obj.name = "fawzan";
+obj.age = 25;
+obj.salary = 50000;
+
+obj.getDetails = function () {
+    console.log(obj.name + " " + obj.age + " " + obj.salary);
+}
+
+console.log(obj);
+console.log(obj.name);
+obj.getDetails();
