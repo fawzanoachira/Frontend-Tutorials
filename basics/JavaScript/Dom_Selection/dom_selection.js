@@ -20,25 +20,39 @@
 //     d[i].innerHTML = i + " " + "Hello";
 // }
 
-let e = document.querySelector("#para");
-e.style.color = "red";
+// let e = document.querySelector("#para");
+// e.style.color = "red";
 
-let f = document.querySelectorAll(".head");
-f[0].style.color = "cyan";
+// let f = document.querySelectorAll(".head");
+// f[0].style.color = "cyan";
 
-let attributeName1 = e.getAttribute("name");
+// let attributeName1 = e.getAttribute("name");
 
-console.log(attributeName1);
+// console.log(attributeName1);
 
-console.log(e.hasAttribute("name"));
+// console.log(e.hasAttribute("name"));
 
 
-e.setAttribute("name", "javascript");
-let attributeName2 = e.getAttribute("name");
-console.log(attributeName2);
+// e.setAttribute("name", "javascript");
+// let attributeName2 = e.getAttribute("name");
+// console.log(attributeName2);
 
-e.removeAttribute("name");
-let attributeName3 = e.getAttribute("name");
+// e.removeAttribute("name");
+// let attributeName3 = e.getAttribute("name");
 
-console.log(attributeName3);
-console.log(e.hasAttribute("name"));
+// console.log(attributeName3);
+// console.log(e.hasAttribute("name"));
+
+// let g = document.getElementById("para");
+// console.log(g.className);
+
+// let h = document.getElementById("para");
+// console.log(h.classList);
+
+let i = document.getElementById("main-id");
+let childParent = i.parentElement;
+console.log(i.parentNode);
+console.log(childParent);
+i.style.width = "200px";
+i.style.height = "200px";
+i.style.backgroundColor = "red";
