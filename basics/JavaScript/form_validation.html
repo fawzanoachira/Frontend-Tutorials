@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="" method="get" name="myform" onsubmit="return formValidation()">
+        <label for="username">Username: </label>
+        <input type="text" name="username" id="username"> <br>
+        <label for="password">Password: </label>
+        <input type="password" name="password" id="password"> <br>
+        <label for="confirmpassword">Confirm Password: </label>
+        <input type="password" name="confirmpassword" id="confirmpassword"> <br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        function formValidation() {
+            let username = document.myform.username.value;
+            let password = document.myform.password.value;
+            let confirmPassword = document.myform.confirmPassword.value;
+            if (username == null || username == "") {
+                alert("Username can't be null or empty");
+            }
+            else if (password.length < 5) {
+                alert("Password should be atleast 5 characters");
+            } else if (password != confirmPassword) {
+                alert("Password must be same");
+            }
+        }
+    </script>
+</body>
+
+</html>

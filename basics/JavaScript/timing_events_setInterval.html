@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="heading"></h1>
+    <button onclick="stop()">Stop</button>
+
+    <script>
+        let x = "hi";
+        let timeout = setInterval(() => {
+            let a = document.getElementById("heading");
+            x = x + x;
+            a.innerHTML = x;
+            a.style.color = "red";
+        }, 2000);
+
+        function stop() {
+            clearInterval(timeout);
+        }
+    </script>
+</body>
+
+</html>
