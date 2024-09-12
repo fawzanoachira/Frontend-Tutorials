@@ -10,11 +10,15 @@
 <body>
     <form action="" method="get" name="myform" onsubmit="return formValidation()">
         <label for="username">Username: </label>
-        <input type="text" name="username" id="username"> <br>
+        <input type="text" name="username" id="username" autocomplete="off"> <br>
+        <label for="email">Email: </label>
+        <input type="text" name="email" id="email" autocomplete="off"> <br>
+
         <label for="password">Password: </label>
         <input type="password" name="password" id="password"> <br>
         <label for="confirmpassword">Confirm Password: </label>
         <input type="password" name="confirmpassword" id="confirmpassword"> <br>
+
         <input type="submit" value="Submit">
     </form>
 
@@ -22,7 +26,17 @@
         function formValidation() {
             let username = document.myform.username.value;
             let password = document.myform.password.value;
-            let confirmPassword = document.myform.confirmPassword.value;
+            let confirmPassword = document.myform.confirmpassword.value;
+            let email = document.myform.email.value;
+
+            var atPosition = email.indexOf("@");
+            var dotPosition = email.lastIndexOf(".");
+            console.log(atPosition + " " + dotPosition);
+
+            if (atPosition < 1 || dotPosition < atPosition + 2 || dotPosition + 2 >= email.length) {
+                alert("Enter a valid Email!");
+            }
+
             if (username == null || username == "") {
                 alert("Username can't be null or empty");
             }
