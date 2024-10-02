@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi quo, totam non, iure, cum voluptates nostrum sunt
+        ullam omnis illo tenetur quam odit commodi nam architecto corporis hic obcaecati dolore.
+        Dolore excepturi dolorum, voluptatum enim modi sit provident impedit temporibus earum accusantium quod quibusdam
+        minima a doloribus et sunt qui asperiores? Eaque, placeat ad sed doloribus eius nesciunt quos asperiores.
+        Aperiam ipsum, odit repellat eum, eos sed expedita, laborum aliquid molestiae sunt mollitia omnis obcaecati
+        consectetur delectus consequuntur eius necessitatibus? Ipsa, ipsum corrupti tempore ipsam facilis consequuntur
+        fugiat vitae optio.
+        Culpa doloremque repellat officia placeat voluptatum? Quos harum delectus et eveniet in porro reprehenderit
+        inventore architecto libero quia, voluptatem incidunt minima doloribus corrupti ipsa dolorem quo modi
+        repudiandae veritatis. Aliquam.
+        Dignissimos impedit ab asperiores laboriosam? Blanditiis culpa aperiam exercitationem. Sint fuga incidunt autem
+        soluta unde, facilis reprehenderit quidem nesciunt vitae nemo tempore laboriosam asperiores nobis quaerat! Vero
+        maxime ex labore.
+    </div>
+    <script>
+        $(document).ready(function () {
+            $('div').on({
+                mouseenter: function () {
+                    $(this).css("background-color", "blue");
+                },
+                mouseleave: function () {
+                    $(this).css("background-color", "red");
+                },
+                click: function () {
+                    $(this).css("background-color", "yellow");
+                }
+            })
+        })
+    </script>
+</body>
+
+</html>

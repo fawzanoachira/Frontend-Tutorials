@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        #panel1,
+        #panel2 {
+            height: 50px;
+            width: 1200px;
+            background-color: red;
+            border: 2px solid;
+            text-align: center;
+        }
+
+        #panel2 {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="panel1">
+        click to slide
+    </div>
+    <div id="panel2"></div>
+    <script>
+        $(document).ready(function () {
+            $('#panel1').click(function () {
+                $('#panel2').slideToggle();
+            })
+        })
+    </script>
+</body>
+
+</html>
