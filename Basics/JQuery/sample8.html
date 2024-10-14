@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        #container{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+    </div>
+    <button id="button">Click Me</button>
+    <script>
+        $(document).ready(function () {
+            $("#button").click(function(){
+                $("#container").animate({
+                    left : "200px",
+                    width : "200px",
+                    height : "200px"
+                },2000,function(){
+                        alert("Moved");
+                    }
+                )
+            })
+        })
+    </script>
+</body>
+
+</html>
