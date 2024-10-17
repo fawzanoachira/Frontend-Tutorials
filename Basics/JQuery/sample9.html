@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="div1" style="background-color: green;  height :100px">
+        <p id="para1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus dignissimos unde eveniet
+            aperiam
+            <i><b><span style="background-color: red;">omnis praesentium nulla at</span></b></i>, sint laboriosam
+            blanditiis
+            odit quidem corporis corrupti natus voluptatem
+            consectetur! Molestias, illum molestiae?
+        </p>
+        <button id="btn">Click me</button>
+        <p id="para2"></p>
+        <p id="para3"></p>
+    </div>
+    <button class="btn2">Hide Childs</button>
+    <script>
+        $(document).ready(function () {
+            $('#btn').click(function () {
+                const text = $('#para1').text();
+                alert(text);
+                $("#para2").text(text);
+                const html = $('#para1').html();
+                $("#para3").html(html);
+            })
+            $('.btn2').click(function () {
+                $('.div1').empty();
+            })
+        })
+    </script>
+</body>
+
+</html>
